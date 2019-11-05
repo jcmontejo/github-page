@@ -1,0 +1,63 @@
+/* #content-parent */
+.content-parent {
+  height: 100vh;
+}
+
+/* #Main Content */
+
+.main-content__child {
+  padding: 7%;
+}
+
+/* #aside-content */
+.aside-content {
+  background: url('./img/background.png')  no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main-picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* #Misc */
+
+.external_links {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.content__techinal p {
+  margin-bottom: 10px !important;
+}
+
+.icon--react {
+  color: #337081;
+}
+
+/* #Grid */
+.parent-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 786px) {
+  html {
+    overflow-y: hidden;
+  }
+  .parent-column {
+    flex-direction: row-reverse;
+  }
+  .middle-column {
+    flex-basis: 50%;
+  }
+  .main-content {
+    align-self: center;
+  }
+}
